@@ -25,7 +25,7 @@ Determine whether a linker with random hexamer (N6) or decamer (N10) UMI was use
   
 `./NETseq_barcode_extraction.sh`
 
-## Align reads using STAR
+### Align reads using STAR
 This corresponds to section 3.5.1.3 in publication.  
 
 `./NETseq_alignment.sh`
