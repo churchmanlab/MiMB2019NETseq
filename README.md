@@ -1,4 +1,4 @@
-# human NETseq alignment
+# NETseq alignment
 Here we provide the custom alignment pipeline that is used to generate (human) NET-seq coverage files as described in Martell et al, Methods in Molecular Biology (2019). Considerable improvements have been made which increase the final coverage 2-3x as compared to the previous version in `https://github.com/churchmanlab/Cell2015human_NETseq`. Here, we also include code for when a Drosophila live cell spike in was used (see publication for experimental details). 
 
 Check each shell script below to set the file paths. As indicated within the scripts uncomment the SLURM or LSF code depending on your operating system. Run shell scripts in order below after each preceding one has finished.
@@ -17,7 +17,8 @@ In case a Drosophila spike-in was used, download Drosophila genome and concatena
 ### Extract unique molecular identifier (UMI, barcode)
 This corresponds to sections 3.5.1.1-2 in publication.  
 Set the field indicated in parameter file `NETseq_align_parameters.in`. 
-Determine whether a linker with random hexamer (N6) or decamer (N10) UMI was used and set the file name according to instructions in script `NETseq_barcode_extraction.sh`. Then run as below.  
+Determine whether a linker with random hexamer (N6) or decamer (N10) UMI was used and set the file name according to instructions in script `NETseq_barcode_extraction.sh`. Then run as below.
+  
 `./NETseq_barcode_extraction.sh`
 
 ### Align reads using STAR
