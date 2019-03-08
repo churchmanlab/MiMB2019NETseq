@@ -1,6 +1,6 @@
 ##Parameters
 
-# provide the base directory where everything is gonna be created; it could consist of a whole path
+# provide the base directory where every file will be created; it could consist of a whole path
 Base Directory : /home/NETseq/X
 
 # provide the sample(s) name(s); if more than 1, separate them by "\n" without spaces  (for example X_S1.fastq and X_S2.fastq): 
