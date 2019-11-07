@@ -32,6 +32,23 @@ Depending on hexamer or decamer UMIs, set as per instructions in script `NETseq_
 `./NETseq_mergeBAM.sh`  
 `./NETseq_remove_PCRdup_SI.sh`  
 
+In case you need to utilize a splicing intermediate file different from `hg38_GENCODE_V24_ex_in_3end_siteCoordinates_1based.txt`: follow these instructions to generate the equivalent:
+1. Go to the UCSC table browser. https://genome.ucsc.edu/cgi-bin/hgTables  
+2. Select desired species and assembly  
+3. Select group: Genes and Gene Prediction Tracks  
+4. Select track: GENCODE V24 (or what is now latest version)  
+5. Select table: knownGene  
+6. Select region: genome  
+7. Select output format: BED  
+8. Enter output file: GENCODE_V24_introns.tsv  
+9. Select file type returned: gzip compressed  
+10. Hit the 'get output' button  
+11. A second page of options relating to the BED file will appear.  
+12. Under 'create one BED record per:'. Select 'Introns plus'  
+13. Add desired flank for introns being returned, or leave as 0 to get just the introns  
+14. Hit the 'get BED' option and save the file  
+15. Run `./hg_SIfile_generation.sh` after adjusting filepath settings to your needs.
+
 ### Generate Coverage files using HTseq
 This corresponds to section 3.5.3 in publication.  
 `./NETseq_coverage.sh`  
