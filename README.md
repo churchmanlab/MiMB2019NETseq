@@ -1,5 +1,5 @@
 # NETseq alignment
-Here we provide the custom alignment pipeline that is used to generate (human) NET-seq coverage files as described in Martell et al, Methods in Molecular Biology (2019). Considerable improvements have been made which increase the final coverage 2-3x as compared to the previous version in `https://github.com/churchmanlab/Cell2015human_NETseq`. Here, we also include code for when a Drosophila live cell spike in was used (see publication for experimental details). 
+Here we provide the custom alignment pipeline that is used to generate (human) NET-seq coverage files as described in Martell et al, Methods in Molecular Biology (accepted for publication). Considerable improvements have been made which increase the final coverage 2-3x as compared to the previous version in `https://github.com/churchmanlab/Cell2015human_NETseq`. Here, we also include code for when a Drosophila live cell spike in was used (see publication for experimental details). 
 
 Check each shell script below to set the file paths. As indicated within the scripts uncomment the SLURM or LSF code depending on your operating system. Run shell scripts in order below after each preceding one has finished.
 
