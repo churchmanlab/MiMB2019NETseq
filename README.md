@@ -47,7 +47,7 @@ In case you need to utilize a splicing intermediate file different from `hg38_GE
 12. Under 'create one BED record per:'. Select 'Introns plus'  
 13. Add desired flank for introns being returned, or leave as 0 to get just the introns  
 14. Hit the 'get BED' option and save the file  
-15. Run `./hg_SIfile_generation.sh` after adjusting filepath settings to your needs.
+15. Run `./hg_SIfile_generation.sh` after adjusting filepath settings to your needs.  
 
 ### Generate Coverage files using HTseq
 This corresponds to section 3.5.3 in publication.  
